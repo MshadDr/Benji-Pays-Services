@@ -1,4 +1,4 @@
-# 🌟 BenjiPays
+# 🌟 BenjiPays Backend
 
 A robust backend built with **NestJS**. A sophisticated mortgage calculator application, designed to help users calculate and visualize their mortgage payments with precision and ease.
 
