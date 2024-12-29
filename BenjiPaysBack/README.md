@@ -1,4 +1,4 @@
-# BetterMode - Social Network Backend
+# BenjiPays - Social Network Backend
 
 A robust social networking backend built with NestJS, A sophisticated mortgage calculator application, designed to help users calculate and visualize their mortgage payments with precision and ease.
 
