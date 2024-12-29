@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "273268ef-0820-41c4-9c26-92bc07d52195",
+		"name": "BenjiPays",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12153639"
+	},
+	"item": [
+		{
+			"name": "getDownPriceTable",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/api/v1/mortgage/calculate-down-payment?propertyPrice=600000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"v1",
+						"mortgage",
+						"calculate-down-payment"
+					],
+					"query": [
+						{
+							"key": "propertyPrice",
+							"value": "600000"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get DownPriceTable Success Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3030/api/v1/mortgage/calculate-down-payment?propertyPrice=600000",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"v1",
+								"mortgage",
+								"calculate-down-payment"
+							],
+							"query": [
+								{
+									"key": "propertyPrice",
+									"value": "600000"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "142"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"8e-UwchNm/8tCsxXuYJDNXNPbs6nEw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 28 Dec 2024 09:44:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"success\": true,\n    \"message\": \"Down payment calculation successful\",\n    \"data\": [\n        [\n            0.058,\n            35000\n        ],\n        [\n            0.1,\n            60000\n        ],\n        [\n            0.15,\n            90000\n        ],\n        [\n            0.2,\n            120000\n        ]\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "health check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/api/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"health"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Health success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3030/api/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"health"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "73"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"49-VEk8ohRcnVSlm2/PuoKCu0QkEPk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 29 Dec 2024 00:16:58 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"success\": true,\n    \"message\": \"health is ok...\",\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "mortgage calculation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3030/api/v1/mortgage/calculate-mortgage?propertyPrice=500000&downPayment=25000&annualInterestRate=0.041&amortizationPeriod=25&paymentSchedule=monthly",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3030",
+					"path": [
+						"api",
+						"v1",
+						"mortgage",
+						"calculate-mortgage"
+					],
+					"query": [
+						{
+							"key": "propertyPrice",
+							"value": "500000"
+						},
+						{
+							"key": "downPayment",
+							"value": "25000"
+						},
+						{
+							"key": "annualInterestRate",
+							"value": "0.041"
+						},
+						{
+							"key": "amortizationPeriod",
+							"value": "25"
+						},
+						{
+							"key": "paymentSchedule",
+							"value": "monthly"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Mortgage Calculation Success Response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3030/api/v1/mortgage/calculate-mortgage?propertyPrice=500000&downPayment=25000&annualInterestRate=0.041&amortizationPeriod=25&paymentSchedule=monthly",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3030",
+							"path": [
+								"api",
+								"v1",
+								"mortgage",
+								"calculate-mortgage"
+							],
+							"query": [
+								{
+									"key": "propertyPrice",
+									"value": "500000"
+								},
+								{
+									"key": "downPayment",
+									"value": "25000"
+								},
+								{
+									"key": "annualInterestRate",
+									"value": "0.041"
+								},
+								{
+									"key": "amortizationPeriod",
+									"value": "25"
+								},
+								{
+									"key": "paymentSchedule",
+									"value": "monthly"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "196"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c4-Neu+gL+oY5ZutB+ZFFpPZqUq6Ic\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 28 Dec 2024 03:06:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"statusCode\": 200,\n    \"success\": true,\n    \"message\": \"Request is successful\",\n    \"data\": {\n        \"amortizationPeriod\": 25,\n        \"paymentSchedule\": \"monthly\",\n        \"payment\": 2635,\n        \"cmhcInsurance\": 19000,\n        \"insuredMortgageAmount\": 494000\n    }\n}"
+				}
+			]
+		}
+	]
+}

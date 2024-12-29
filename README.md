@@ -1,28 +1,47 @@
 # 🏠 Benji Pays Project
 
-This repository contains both the frontend and backend for the **Benji Pays** application—a sophisticated mortgage calculator and social networking platform.
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-orange)
+
+This repository contains both the frontend and backend for the **Benji Pays** application—a sophisticated mortgage calculator.
+
+## 📂 Table of Contents
+
+- [Project Structure](#project-structure)
+- [Author](#author)
+- [Project Overview](#project-overview)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Running the Applications](#running-the-applications)
+- [License](#license)
+- [Contributing](#contributing)
+- [Acknowledgments](#acknowledgments)
+- [Key Highlights](#key-highlights)
 
 ## 📂 Project Structure
 
 - **`/BenjiPaysBack`**: Backend (NestJS)  
-  A robust backend for managing mortgage calculations and social network features.  
+  A robust backend for managing mortgage calculations.  
   See the [Backend README](BenjiPaysBack/README.md) for more details.
 
 - **`/BenjiPaysFront`**: Frontend (Next.js)  
   A dynamic and intuitive user interface for the Benji Pays application.  
   See the [Frontend README](BenjiPaysFront/README.md) for more details.
 
+> You can find more details about each service in the README.md files located in each service folder.
+
 ## 👤 Author
 
 - **Name**: Mehrshad Darvish
-- **Email**: mshad.darvish@gmail.com
+- **Email**: [mshad.darvish@gmail.com](mailto:mshad.darvish@gmail.com)
 - **Phone**: +1 (604) 220-2775
 - [LinkedIn](https://www.linkedin.com/in/mehrshad-darvish/)
 
 ## 🎥 Project Overview
 
 Watch the video explanation of this project:  
-[Video Link](https://youtu.be/h0XOxBXRxrI)
+[![Video Preview](https://blog.hansoninc.com/wp-content/uploads/2017/05/YouTube-logo-full_color.png)](https://youtu.be/uEjILEdAlao)
 
 ---
 
@@ -81,7 +100,7 @@ cd BenjiPaysBack
 Start the server in development mode:
 
 ```bash
-npm run dev
+npm run start:dev
 ```
 
 #### Start the Frontend

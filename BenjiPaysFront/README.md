@@ -2,6 +2,17 @@
 
 A sophisticated mortgage calculator application built with Next.js and TypeScript, designed to help users calculate and visualize their mortgage payments with precision and ease.
 
+## 📚 Table of Contents
+
+- [👤 Author](#author)
+- [🎥 Project Overview](#project-overview)
+- [✨ Key Features](#key-features)
+- [🛠 Tech Stack](#tech-stack)
+- [🚀 Getting Started](#getting-started)
+- [🤝 Contributing](#contributing)
+- [📝 License](#license)
+- [🙏 Acknowledgments](#acknowledgments)
+
 ## 👤 Author
 
 - **Name**: Mehrshad Darvish
@@ -12,7 +23,7 @@ A sophisticated mortgage calculator application built with Next.js and TypeScrip
 ## 🎥 Project Overview
 
 Watch the video explanation of this project:
-[Video Link](https://youtu.be/h0XOxBXRxrI)
+[![Video Preview](https://blog.hansoninc.com/wp-content/uploads/2017/05/YouTube-logo-full_color.png)](https://youtu.be/uEjILEdAlao)
 
 ## ✨ Key Features
 
@@ -28,9 +39,7 @@ Watch the video explanation of this project:
 - **Framework:** [Next.js](https://nextjs.org/)
 - **Language:** [TypeScript](https://www.typescriptlang.org/) (94.5%)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/) with CSS (4.2%)
-- **Components:** [shadcn/ui](https://ui.shadcn.com/)
 - **Code Quality:** ESLint, Prettier
-- **Development Tools:** PostCSS
 
 ## 🚀 Getting Started
 
@@ -54,20 +63,16 @@ Watch the video explanation of this project:
 
 3. Install the dependencies:
 
-   Using npm:
-
-   ```bash
-   npm install
-   ```
-
-   Or using yarn:
-
-   ```bash
-   yarn install
-   ```
+   - Using npm:
+     ```bash
+     npm install
+     ```
+   - Or using yarn:
+     ```bash
+     yarn install
+     ```
 
 4. Run the application:
-
    ```bash
    npm run dev
    ```
